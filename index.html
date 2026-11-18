@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#101e37" />
-<title>马克思主义哲学 · 错题闪卡 · 在线复习库</title>
+<title>马克思主义 · 核心知识点闪卡</title>
 <style>
 :root{color-scheme:light;--navy:#172a46;--ink:#14233b;--muted:#65738a;--line:#dde5f0;--bg:#f4f7fc;--white:#fff;--teal:#087f72;--tealSoft:#e4f7f1;--red:#bf423b;--redSoft:#ffefed;--blue:#3664be;--blueSoft:#eaf0ff;--shadow:0 12px 30px rgba(34,52,88,.09)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
@@ -22,15 +22,15 @@ form{display:grid;gap:11px}label{display:block;color:#3f526e;font-weight:700;fon
 </head>
 <body>
 <header class="hero"><div class="wrap">
- <div class="eyebrow">MARXISM · SPACED REVIEW</div><h1>错题闪卡 · 定时复习器</h1>
+ <div class="eyebrow">MARXISM · SPACED REVIEW</div><h1>核心知识点 · 定时复习</h1>
  <p>添加当天 D0 即可在「今日复习」学习新卡；D1 / D3 / D7 定期复习，遗忘则加练，支持斩卡与离线备份。</p>
- <div class="meta"><span class="chip">单题单卡</span><span class="chip">本机自动保存</span><span class="chip">支持导出备份</span><span class="chip">按北京时间安排自然日</span></div>
+ <div class="meta"><span class="chip">只记核心知识点</span><span class="chip">本机自动保存</span><span class="chip">支持导出备份</span><span class="chip">按北京时间安排自然日</span></div>
 </div></header>
 <main class="wrap main">
 <div class="stats"><div class="stat strong"><div class="num" id="statDue">0</div><div class="title">今日待学习</div></div><div class="stat"><div class="num" id="statActive">0</div><div class="title">计划中</div></div><div class="stat"><div class="num" id="statArchived">0</div><div class="title">已归档 / 斩卡</div></div><div class="stat"><div class="num" id="statDone">0</div><div class="title">今日已完成</div></div></div>
 <nav class="tabs" role="tablist" aria-label="闪卡功能"><button class="tab" data-tab="review" role="tab" aria-selected="true">今日复习</button><button class="tab" data-tab="plan" role="tab" aria-selected="false">复习日历</button><button class="tab" data-tab="all" role="tab" aria-selected="false">全部闪卡</button><button class="tab" data-tab="archive" role="tab" aria-selected="false">归档 / 斩卡</button><button class="tab" data-tab="add" role="tab" aria-selected="false">新增 / 备份</button></nav>
 <section class="section current" id="section-review" role="tabpanel">
- <div class="surface"><div class="row"><h2 class="section-h">今日复习</h2><span class="pill green" id="todayBadge"></span></div><p class="subtext" id="reviewSub"></p><div id="todayQueue"></div><div id="reviewArea"><div class="warning"><b>阅读器提示：</b>若这里一直不显示可翻面的卡片，说明当前文件预览未运行交互脚本；请使用 Safari 等浏览器打开 HTML 文件。下面列出全部4张原始错题。</div><div class="cardlist" style="margin-top:12px"><div class="item"><b>1.</b> 社会经济形态发展中，人类社会的两对基本矛盾是什么？</div><div class="item"><b>2.</b> 马克思主义诞生的根本条件是什么？</div><div class="item"><b>3.</b> 意识和物质的对立何以具有相对性？</div><div class="item"><b>4.</b> 1G 到 5G 的技术演进体现哪些哲学原理？</div></div></div></div>
+ <div class="surface"><div class="row"><h2 class="section-h">今日复习</h2><span class="pill green" id="todayBadge"></span></div><p class="subtext" id="reviewSub"></p><div id="todayQueue"></div><div id="reviewArea"><div class="warning"><b>阅读器提示：</b>若这里一直不显示可翻面的卡片，说明当前文件预览未运行交互脚本；请使用 Safari 等浏览器打开 HTML 文件。下面列出全部4张核心知识点卡。</div><div class="cardlist" style="margin-top:12px"><div class="item"><b>1.</b> 社会经济形态发展中，人类社会的两对基本矛盾是什么？</div><div class="item"><b>2.</b> 马克思主义诞生的根本条件是什么？</div><div class="item"><b>3.</b> 意识和物质的对立何以具有相对性？</div><div class="item"><b>4.</b> 1G 到 5G 的技术演进体现哪些哲学原理？</div></div></div></div>
  <div class="surface"><h2 class="section-h">答题规则</h2><div class="rule"><b>记得</b>：完成本次任务；若已到 D7 且无待完成加练，自动归档。</div><div class="rule"><b>不记得</b>：在 D3 / D7 / 加练日回答“不记得”，次日增加一次复习，原计划日不顺延；D1 选“不记得”不加练。</div><div class="rule"><b>斩卡</b>：你判断完全掌握后，可立即停止这张卡的所有复习并归档；可在归档页恢复。</div></div>
 </section>
 <section class="section" id="section-plan" role="tabpanel">
@@ -39,7 +39,7 @@ form{display:grid;gap:11px}label{display:block;color:#3f526e;font-weight:700;fon
 </section>
 <section class="section" id="section-all" role="tabpanel"><div class="surface"><div class="row"><h2 class="section-h">所有未归档的卡片</h2><span class="subtext" id="allNum"></span></div><div id="allList" class="cardlist" style="margin-top:12px"></div></div></section>
 <section class="section" id="section-archive" role="tabpanel"><div class="surface"><div class="row"><h2 class="section-h">已归档与斩卡</h2><span class="subtext">这里不再出现在每日待复习中</span></div><div id="archiveList" class="cardlist" style="margin-top:12px"></div></div></section>
-<section class="section" id="section-add" role="tabpanel"><div class="surface"><h2 class="section-h">添加新闪卡</h2><p class="subtext">新卡从添加当天独立记录为 D0，自动计算各自的 D1 / D3 / D7。</p><form id="addForm"><div><label for="newFront">正面（问题）</label><textarea id="newFront" maxlength="400" placeholder="例如：马克思主义的直接理论来源是什么？" required></textarea></div><div><label for="newBack">背面（答案与辨析）</label><textarea id="newBack" maxlength="400" placeholder="例如：德国古典哲学、英国古典政治经济学、英法空想社会主义。" required></textarea></div><button class="btn primary" type="submit">添加并开始独立 D0 计时</button></form></div>
+<section class="section" id="section-add" role="tabpanel"><div class="surface"><h2 class="section-h">添加新闪卡</h2><p class="subtext">新卡从添加当天独立记录为 D0，自动计算各自的 D1 / D3 / D7。</p><form id="addForm"><div><label for="newFront">正面（问题）</label><textarea id="newFront" maxlength="400" placeholder="例如：马克思主义的直接理论来源是什么？" required></textarea></div><div><label for="newBack">背面（核心知识点）</label><textarea id="newBack" maxlength="400" placeholder="例如：德国古典哲学、英国古典政治经济学、英法空想社会主义。" required></textarea></div><button class="btn primary" type="submit">添加并开始独立 D0 计时</button></form></div>
 <div class="surface"><h2 class="section-h">数据备份</h2><p class="subtext">本地自动保存仅在同一浏览器和同一文件打开环境下有效。推荐使用“保存带进度的 HTML”制作可迁移的完整副本，并定期保存 JSON 备份。</p><div class="tools"><button class="btn primary" id="snapshotBtn">保存带进度的 HTML 完整副本</button><button class="btn light" id="exportBtn">导出 JSON 备份</button><button class="btn light" id="importBtn">导入备份</button><input class="hidden" type="file" id="importFile" accept="application/json,.json" /></div><div id="storageWarning" class="warning hidden" style="margin-top:12px">当前浏览环境可能禁止本地保存。请导出备份，避免关闭后丢失复习记录。</div></div>
 <div class="surface"><h2 class="section-h">你的排期定义</h2><p class="rule"><b>D0：</b>创建日，可翻面预习，预习不影响正式排期。</p><p class="rule"><b>D1 / D3 / D7：</b>分别在创建后的第 1、3、7 个自然日复习。</p><p class="rule"><b>D3 起遗忘：</b>无论 D3、D7 还是加练日，只要选择“不记得”，次日再加练一次；若在加练日仍遗忘，继续顺延加练，直到记得。基础节点保持原日。</p><p class="rule"><b>D7 后：</b>基础排期停止，自动归档；如尚有遗忘加练，先完成该加练链再归档。</p><p class="rule"><b>斩卡：</b>任何时候手动斩卡，立即归档，不再安排复习。</p></div>
 </section>
@@ -53,28 +53,10 @@ const SEED_DATE='2026-11-18';
 const SEED_TIME='2026-11-18T21:56:00+08:00';
 const MS_DAY=86400000;
 const initialCards=[
- {id:'marx-001',front:`在社会经济形态的发展过程中，构成人类社会基本矛盾的有（多选）：
-A 生产资料私有制和生产社会化的矛盾
-B 社会总供给和总需求的矛盾
-C 生产力和生产关系的矛盾
-D 各产品生产部门之间的矛盾
-E 经济基础和上层建筑的矛盾`,back:'正确答案：C、E。社会基本矛盾是生产力与生产关系、经济基础与上层建筑。A 是资本主义基本矛盾。'},
- {id:'marx-002',front:`马克思主义诞生的根本条件是（单选）：
-A 工人运动的兴起
-B 资本主义的迅速发展
-C 社会主义思想高涨
-D 吸取人类优秀的文化成果`,back:'正确答案：B。资本主义迅速发展是根本社会经济条件；工人运动兴起是阶级基础。'},
- {id:'marx-003',front:`意识和物质的对立只在有限范围内有绝对意义，超出范围便是相对的，其根本原因是（单选）：
-A 意识是物质的固有属性
-B 意识可以转化为物质
-C 意识是物质的存在形式
-D 意识是对物质的能动反映`,back:'正确答案：B。意识通过实践能转化为物质力量；不是意识本身直接变为物质，也不是意识可以凭空创造物质。'},
- {id:'marx-004',front:`移动通信从 1G 发展到 5G，体现哪些哲学观点？
-① 人类对于一个事物的正确认识具有无限性
-② 辩证的否定不断推动实践创新
-③ 矛盾具有特殊性，同一事物在发展不同阶段有不同特点
-④ 科技进步是不断推翻已有认识成果的过程
-截图所示：A①②③④　B①②③　C②③④`,back:'正确答案：B（①②③）。认识随实践深化；辩证否定是扬弃，不等于全盘推翻已有认识。原截图未展示 D 项。'}
+ {id:'marx-001',front:'人类社会的两对基本矛盾是什么？',back:'生产力与生产关系；经济基础与上层建筑。'},
+ {id:'marx-002',front:'马克思主义诞生的根本社会经济条件是什么？',back:'资本主义的迅速发展。'},
+ {id:'marx-003',front:'为什么物质与意识的对立具有相对性？',back:'意识通过实践可以转化为物质力量。'},
+ {id:'marx-004',front:'1G 到 5G 的发展体现哪三条哲学原理？',back:'认识具有无限性；辩证否定（扬弃）；矛盾具有特殊性。'}
 ].map(x=>({...x,addedOn:SEED_DATE,addedAt:SEED_TIME,status:'active',archivedAt:null,archiveReason:null,history:[],completedStages:[],pendingExtras:[]}));
 let state={version:1,cards:[]};
 let currentTab='review';
@@ -100,9 +82,15 @@ function nowText(){return new Date().toISOString();}
 function validateCard(c){return c&&typeof c.id==='string'&&typeof c.front==='string'&&typeof c.back==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(c.addedOn)&&Array.isArray(c.history)&&Array.isArray(c.completedStages)&&Array.isArray(c.pendingExtras)&&['active','archived','killed'].includes(c.status);}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));storageOK=true;}catch(e){storageOK=false;}el('storageWarning').classList.toggle('hidden',storageOK);}
 function mergeBuiltInCards(){
- // 网站今后更新时，只补充新错题，不清空已有复习记录、斩卡和归档状态。
- const known=new Set(state.cards.map(c=>c.id));let changed=false;
- for(const c of initialCards){if(!known.has(c.id)){state.cards.push(structuredClone(c));known.add(c.id);changed=true;}}
+ // 增补新卡，并更新已有内置卡的知识点文案；保留每张卡的 D0、复习历史、加练和归档状态。
+ const known=new Map(state.cards.map(c=>[c.id,c]));let changed=false;
+ for(const c of initialCards){
+  const existing=known.get(c.id);
+  if(!existing){state.cards.push(structuredClone(c));changed=true;continue;}
+  if(existing.front!==c.front||existing.back!==c.back){
+   existing.front=c.front;existing.back=c.back;changed=true;
+  }
+ }
  if(changed)save();
 }
 function load(){try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(parsed&&Array.isArray(parsed.cards)&&parsed.cards.every(validateCard)){state={version:1,cards:parsed.cards};mergeBuiltInCards();return;}}}catch(e){storageOK=false;}
@@ -145,7 +133,7 @@ function renderReview(){const today=localDate();const due=dueCards(today);const 
  const list=document.createElement('div');list.className='queue-list';[...due,...previews].forEach((c,i)=>{const line=document.createElement('div');const kind=due.includes(c)?dueDetails(c,today):'D0 新卡';line.textContent=(i+1)+'. ['+kind+'] '+c.front.split('\n')[0];list.appendChild(line);});wrap.appendChild(list);queue.appendChild(wrap);}
  const area=el('reviewArea');area.replaceChildren();const c=chooseNext();if(!c){const div=document.createElement('div');div.className='empty';div.innerHTML='<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#087f72" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><h3>今天已经没有待复习的卡片</h3><p>D1 / D3 / D7 按每张卡的添加日独立计算。</p>';area.appendChild(div);return;}
  const count=el('statDone').textContent;const isPreview=c.addedOn===today&&!c.previewedOn&&!baseDue(c,today).length&&!extraDue(c,today).length;const progress=document.createElement('p');progress.className='subtext';progress.textContent=isPreview?'D0 新卡预习 · 今天只熟悉题目，不影响 D1 / D3 / D7':'本张任务：'+dueDetails(c,today)+' · 本日待复习 '+due.length+' 张 · 今日已完成 '+count+' 次';area.appendChild(progress);
- const btn=document.createElement('button');btn.className='flash'+(revealed?' is-back':'');btn.setAttribute('aria-label',revealed?'答案：点击返回问题':'问题：点击翻面看答案');const top=document.createElement('div');top.className='top';top.textContent=revealed?'背面 · 答案与辨析':'正面 · 先尝试回答';const content=document.createElement('div');content.className='content';content.textContent=revealed?c.back:c.front;const bottom=document.createElement('div');bottom.className='bottom';bottom.textContent=revealed?'再点一次可返回题目':'轻点卡片翻面查看答案';btn.append(top,content,bottom);btn.addEventListener('click',()=>{revealed=!revealed;renderReview();});area.appendChild(btn);
+ const btn=document.createElement('button');btn.className='flash'+(revealed?' is-back':'');btn.setAttribute('aria-label',revealed?'答案：点击返回问题':'问题：点击翻面看答案');const top=document.createElement('div');top.className='top';top.textContent=revealed?'背面 · 核心答案':'正面 · 先尝试回答';const content=document.createElement('div');content.className='content';content.textContent=revealed?c.back:c.front;const bottom=document.createElement('div');bottom.className='bottom';bottom.textContent=revealed?'再点一次可返回题目':'轻点卡片翻面查看答案';btn.append(top,content,bottom);btn.addEventListener('click',()=>{revealed=!revealed;renderReview();});area.appendChild(btn);
  const actions=document.createElement('div');actions.className='actions';[['forgot','不记得','forgot'],['remember','记得','remember'],['kill','斩卡','kill']].forEach(([className,label,rating])=>{const b=document.createElement('button');b.className='btn '+className;b.textContent=label;b.disabled=rating!=='kill'&&!revealed;b.addEventListener('click',()=>record(c,rating));actions.appendChild(b);});area.appendChild(actions);
  const note=document.createElement('p');note.className='answer-note';note.textContent='添加日 D0：'+c.addedOn+' ｜ D1 '+stageDate(c,1)+' ｜ D3 '+stageDate(c,3)+' ｜ D7 '+stageDate(c,7);area.appendChild(note);
 }
