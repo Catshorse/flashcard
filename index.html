@@ -56,8 +56,9 @@ const initialCards=[
  {id:'marx-001',front:'人类社会的两对基本矛盾是什么？',back:'生产力与生产关系；经济基础与上层建筑。'},
  {id:'marx-002',front:'马克思主义诞生的根本社会经济条件是什么？',back:'资本主义的迅速发展。'},
  {id:'marx-003',front:'为什么物质与意识的对立具有相对性？',back:'意识通过实践可以转化为物质力量。'},
- {id:'marx-004',front:'1G 到 5G 的发展体现哪三条哲学原理？',back:'认识具有无限性；辩证否定（扬弃）；矛盾具有特殊性。'}
-].map(x=>({...x,addedOn:SEED_DATE,addedAt:SEED_TIME,status:'active',archivedAt:null,archiveReason:null,history:[],completedStages:[],pendingExtras:[]}));
+ {id:'marx-004',front:'1G 到 5G 的发展体现哪三条哲学原理？',back:'认识具有无限性；辩证否定（扬弃）；矛盾具有特殊性。'},
+ {id:'marx-005',front:'物质与意识的关系：世界观与方法论分别是什么？',back:'世界观：世界是物质的，物质决定意识。\n方法论：一切从实际出发，实事求是。',addedOn:'2026-11-18',addedAt:'2026-11-18T15:18:47.048Z'}
+].map(x=>({...x,addedOn:x.addedOn||SEED_DATE,addedAt:x.addedAt||SEED_TIME,status:'active',archivedAt:null,archiveReason:null,history:[],completedStages:[],pendingExtras:[]}));
 let state={version:1,cards:[]};
 let currentTab='review';
 let revealed=false;
