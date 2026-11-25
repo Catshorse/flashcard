@@ -283,6 +283,20 @@ const initialCards=[
     "back": "抑制P-gp，可增加肠道吸收、减少药物清除，使地高辛暴露升高；还叠加房室传导抑制作用。联合时需评估减量并监测血药浓度、心率和心电图。",
     "addedOn": "2026-11-25",
     "addedAt": "2026-11-25T12:00:00+08:00"
+  },
+  {
+    "id": "im-cardio-034",
+    "front": "钠钾泵被抑制后，Na⁺梯度减小，为什么胞内Ca²⁺反而增加，而不是减少？",
+    "back": "正常NCX利用3个Na⁺顺电化学梯度内流，驱动1个Ca²⁺逆梯度外排，而非驱动钙内流。钠钾泵受抑→胞内Na⁺↑→NCX排钙驱动力↓→净排钙减少、肌浆网储钙增加；特定膜电位及离子梯度下也可促进NCX反向钙内流。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
+  },
+  {
+    "id": "im-cardio-035",
+    "front": "P-糖蛋白（P-gp）在小肠和肾脏分别如何影响地高辛？为何维拉帕米、胺碘酮使其血药浓度升高？",
+    "back": "P-gp是ATP依赖性药物外排蛋白（ABCB1）。小肠P-gp将地高辛排回肠腔，限制吸收；肾小管P-gp参与将其排入尿液。维拉帕米、胺碘酮抑制P-gp，可增加吸收、减少清除，升高地高辛暴露；不是主要通过CYP450抑制。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
   }
 ].map(x=>({...x,addedOn:x.addedOn||SEED_DATE,addedAt:x.addedAt||SEED_TIME,status:'active',archivedAt:null,archiveReason:null,history:[],completedStages:[],pendingExtras:[]}));
 let state={version:1,cards:[]};
