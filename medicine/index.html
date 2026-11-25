@@ -115,6 +115,41 @@ const initialCards=[
     "back": "心腔扩大、收缩功能下降，常表现为HFrEF；合理降低后负荷可减少射血阻力，改善前向心输出量；按血压及适应证实施规范心衰治疗。",
     "addedOn": "2026-11-25",
     "addedAt": "2026-11-25T10:38:00+08:00"
+  },
+  {
+    "id": "im-cardio-010",
+    "front": "心肌主动松弛与被动顺应性有什么区别？",
+    "back": "主动松弛需ATP驱动胞质Ca²⁺清除，使肌丝解除收缩，心肌缺血可损害它；被动顺应性指单位压力变化引起的容量变化（ΔV/ΔP），肥厚和纤维化使顺应性下降。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
+  },
+  {
+    "id": "im-cardio-011",
+    "front": "射血分数如何计算？为何EF正常仍可发生心衰？",
+    "back": "LVEF=(EDV−ESV)/EDV×100%=SV/EDV×100%。EF是比例而非绝对射血量；充盈受限时EDV与SV可同时降低，或充盈压升高导致淤血，即使EF正常也可发生心衰。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
+  },
+  {
+    "id": "im-cardio-012",
+    "front": "HFrEF、HFmrEF和HFpEF的LVEF界值分别是什么？",
+    "back": "HFrEF≤40%；HFmrEF 41%～49%；HFpEF≥50%。需结合心衰症状/体征及相应客观证据，不能仅凭EF诊断心衰。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
+  },
+  {
+    "id": "im-cardio-013",
+    "front": "二氢吡啶类和非二氢吡啶类钙拮抗剂有何区别？",
+    "back": "二氢吡啶类（氨氯地平、硝苯地平）主要扩张血管；非二氢吡啶类（维拉帕米、地尔硫䓬）还减慢心率和房室传导、有负性肌力作用，通常避免用于HFrEF。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
+  },
+  {
+    "id": "im-cardio-014",
+    "front": "洋地黄和硝酸酯治疗舒张功能障碍有何局限？",
+    "back": "洋地黄增强收缩力、减慢房室传导，并非逆转肥厚或改善单纯舒张功能障碍的药物；硝酸酯降低充盈压，但不是经典逆转左室肥厚药，也不推荐常规用于改善HFpEF运动能力。",
+    "addedOn": "2026-11-25",
+    "addedAt": "2026-11-25T12:00:00+08:00"
   }
 ].map(x=>({...x,addedOn:x.addedOn||SEED_DATE,addedAt:x.addedAt||SEED_TIME,status:'active',archivedAt:null,archiveReason:null,history:[],completedStages:[],pendingExtras:[]}));
 let state={version:1,cards:[]};
