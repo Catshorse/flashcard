@@ -864,6 +864,13 @@ const initialCards=[
     "back": "复位、固定、功能锻炼。急救阶段重点是临时固定。",
     "addedOn": "2026-11-26",
     "addedAt": "2026-11-26"
+  },
+  {
+    "id": "surg-general-016",
+    "front": "低渗性脱水、高渗性脱水以哪部分液体的渗透压命名？水向哪里转移？",
+    "back": "以细胞外液渗透压为准。低渗：失钠＞失水，细胞外液变稀，水进入细胞，循环血容量进一步减少，易休克。高渗：失水＞失钠，细胞外液变浓，水移出细胞，部分补偿循环血容量。水转移后内外渗透压趋于平衡。等渗：同比例丢失，无明显跨细胞水转移。",
+    "addedOn": "2026-11-26",
+    "addedAt": "2026-11-26"
   }
 ].map(x=>({...x,addedOn:x.addedOn||SEED_DATE,addedAt:x.addedAt||SEED_TIME,status:'active',archivedAt:null,archiveReason:null,history:[],completedStages:[],pendingExtras:[]}));
 let state={version:1,cards:[]};
